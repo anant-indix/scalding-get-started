@@ -4,6 +4,9 @@ version := "0.1"
 
 scalaVersion := "2.11.8"
 
-libraryDependencies += "com.twitter" %% "scalding-core" % "0.17.4"
+resolvers ++= Seq("abcd" at "http://conjars.org/repo/")
 
-libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "2.9.0" % Provided
+libraryDependencies ++= Seq(
+			"com.twitter" %% "scalding-core" % "0.17.3",
+			"cascading" % "cascading-hadoop" % "2.6.1",
+			"org.apache.hadoop" % "hadoop-client" % "2.9.0" % Provided)
