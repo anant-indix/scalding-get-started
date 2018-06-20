@@ -1,4 +1,4 @@
-package com.indix
+package com.example
 
 import com.twitter.scalding.{Args, Job, TextLine, Tsv}
 
